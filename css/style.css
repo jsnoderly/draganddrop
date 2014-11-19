@@ -1,0 +1,78 @@
+#user-levels {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#admins, #editors, #contributors, #unassigned {
+  float: left;
+  width: 200px;
+  height: 200px;
+  padding: 5px 0;
+  margin-right: 3px;
+  background: #eee;
+  text-align: center;
+}
+
+#contributors {
+  background: url('img/gryffindor.png') center center no-repeat;
+  background-size: 100px 100px;
+}
+
+#editors {
+  background: url('img/slytherin.png') center center no-repeat;
+  background-size: 100px 100px;
+}
+
+#admins {
+  background: url('img/ravenclaw.png') center center no-repeat;
+  background-size: 100px 100px;
+}
+
+#admins, #editors, #contributors {
+  background-color: #ff6600;
+}
+
+#barb-message {
+  float: left;
+  width: 200px;
+  height: 200px;
+  padding: 5px 0;
+  margin-right: 3px;
+  background: #eee;
+  text-align: center;
+  background-color: orange;
+  color: white;
+  font: 20px bold serif;
+}
+
+#barb-message img {
+  max-width: 170px;
+}
+
+.user {
+  width: 100px;
+  display: block;
+  border: 1px solid #333;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px;
+  background-color: dodgerblue;
+  margin: 3px auto;
+  padding: 3px 15px;
+  clear:left:;
+
+  font: 13px normal arial,sans-serif;
+}
+
+hr {
+  border:0;
+  height:1px;
+  background: #ccc;
+}
+
+.reqs {
+  background-color: #
+}
+
+.clear {
+  clear: both;
+}
