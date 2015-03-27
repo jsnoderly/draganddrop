@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Drag and Drop Demo</title>
+	<title>HTML5 Drag and Drop Demo</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
@@ -11,15 +11,16 @@
 
 <section id="user-levels">
 
-<h1>HOGWARTS Sorting Hat DEMO</h1>
+	<h1>HOGWARTS Sorting Hat</h1>
+	<h4>HTML5 Drag and Drop Demo</h4>
 
 	<div id="unassigned" ondrop="dropUser(this,event)" ondragenter="return false" ondragover="return false">
 		New Hogwarts Students
 		<hr>
 		<a draggable="true" id="hermoine" class="user" ondragstart="dragUser(this,event)">Hermoine</a>
 		<a draggable="true" id="ron" class="user" ondragstart="dragUser(this,event)">Ron</a>
-		<a draggable="true" id="beans" class="user" ondragstart="dragUser(this,event)">Beans</a>
-		<a draggable="true" id="barb" class="user" ondragstart="dragUser(this,event)">BARB</a>
+		<a draggable="true" id="beans" class="user" ondragstart="dragUser(this,event)">Jenny</a>
+		<a draggable="true" id="barb" class="user" ondragstart="dragUser(this,event)">Neville</a>
 		<a draggable="true" id="malfoy" class="user" ondragstart="dragUser(this,event)">Malfoy</a>
 		<a draggable="true" id="harry" class="user" ondragstart="dragUser(this,event)">Harry</a>
 	</div>
@@ -42,28 +43,17 @@
 
 </section>
 
-
+<script src="js/jquery-2.1.1.min.js"></script>
 <script>
 	function dropUser(target, event) {
 		var user = event.dataTransfer.getData('User');
 		target.appendChild(document.getElementById(user));
-
-		// Barb surprise
-		if (user == "barb") {
-			$("#contributors").replaceWith("<div id='barb-message'><p>I LOVE YOU!</p><img src='img/heart.gif'/></div>").slideUp(1000);
-		}
-		// Beans surprise
-		if (user == "beans") {
-			$("#contributors").replaceWith("<div id='barb-message'><p>Fart baby!</p><img src='img/fart.jpg'/></div>").fadeIn(300);
-		}
 	}
 
 	function dragUser(user, event) {
 		event.dataTransfer.setData('User', user.id);
 	}
 </script>
-
-<script src="js/jquery-2.1.1.min.js"></script>
 
 </body>
 </html>

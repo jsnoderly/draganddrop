@@ -1,3 +1,19 @@
+body {
+  font: 16px arial, "sans-serif";
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding:0;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding:0;
+}
+
 #user-levels {
   max-width: 960px;
   margin: 0 auto;
@@ -14,39 +30,23 @@
 }
 
 #contributors {
-  background: url('img/gryffindor.png') center center no-repeat;
+  background: url('../img/gryffindor.png') center center no-repeat;
   background-size: 100px 100px;
 }
 
 #editors {
-  background: url('img/slytherin.png') center center no-repeat;
+  background: url('../img/slytherin.png') center center no-repeat;
   background-size: 100px 100px;
 }
 
 #admins {
-  background: url('img/ravenclaw.png') center center no-repeat;
+  background: url('../img/ravenclaw.png') center center no-repeat;
   background-size: 100px 100px;
 }
 
 #admins, #editors, #contributors {
-  background-color: #ff6600;
-}
-
-#barb-message {
-  float: left;
-  width: 200px;
-  height: 200px;
-  padding: 5px 0;
-  margin-right: 3px;
-  background: #eee;
-  text-align: center;
-  background-color: orange;
-  color: white;
-  font: 20px bold serif;
-}
-
-#barb-message img {
-  max-width: 170px;
+  background-color: brown;
+  color: #fff;
 }
 
 .user {
@@ -55,11 +55,10 @@
   border: 1px solid #333;
   border-radius: 3px;
   box-shadow: 1px 1px 2px;
-  background-color: dodgerblue;
+  background-color: gold;
   margin: 3px auto;
   padding: 3px 15px;
   clear:left:;
-
   font: 13px normal arial,sans-serif;
 }
 
